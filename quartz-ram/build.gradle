@@ -1,0 +1,16 @@
+group 'study'
+version '1.0-SNAPSHOT'
+
+apply plugin: 'java'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies{
+    compile("org.quartz-scheduler:quartz:2.2.1")
+    compile 'org.slf4j:slf4j-log4j12:1.6.6'
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+}
